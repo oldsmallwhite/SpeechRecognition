@@ -13,12 +13,11 @@ namespace MvcMovie.Controllers
         public string Index()
         {
             // 设置APPID/AK/SK
-            var APP_ID = "你的 App ID";
-            var API_KEY = "你的 Api Key";
-            var SECRET_KEY = "你的 Secret Key";
+            var APP_ID = "11618610";
+            var API_KEY = "zmskrQcqn3wOwgpgXne3sUIO";
+            var SECRET_KEY = "2hwb1GRzjArFP1hrfG4mny6qsak47lXD ";
             var client = new Baidu.Aip.Speech.Asr(APP_ID,API_KEY,SECRET_KEY);
-            //var data = File.ReadAllBytes("语音pcm文件地址");
-            var data = System.IO.File.ReadAllBytes("");
+            var data = System.IO.File.ReadAllBytes("C:/16k.pcm");
             client.Timeout = 120000; // 若语音较长，建议设置更大的超时时间. ms
             var result = client.Recognize(data, "pcm", 16000);
             return "";
