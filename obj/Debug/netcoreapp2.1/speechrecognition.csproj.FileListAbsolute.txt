@@ -62,3 +62,4 @@ C:\projects\speechrecognition\obj\Debug\netcoreapp2.1\speechrecognition.Views.pd
 C:\projects\speechrecognition\obj\Debug\netcoreapp2.1\speechrecognition.dll
 C:\projects\speechrecognition\obj\Debug\netcoreapp2.1\speechrecognition.pdb
 C:\projects\speechrecognition\obj\Debug\netcoreapp2.1\speechrecognition.csproj.CopyComplete
+C:\projects\speechrecognition\obj\Debug\netcoreapp2.1\Razor\Views\HelloWorld\Index.g.cshtml.cs
