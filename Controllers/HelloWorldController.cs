@@ -12,7 +12,7 @@ namespace MvcMovie.Controllers
 
         public ActionResult Index()
         {
-            设置APPID/AK/SK
+            //设置APPID/AK/SK
             var APP_ID = "11618610";
             var API_KEY = "zmskrQcqn3wOwgpgXne3sUIO";
             var SECRET_KEY = "2hwb1GRzjArFP1hrfG4mny6qsak47lXD ";
