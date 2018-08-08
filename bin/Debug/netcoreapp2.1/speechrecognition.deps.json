@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "a9e3783f20097bc4fbd3b165ed8fcec9209cfd1e"
+    "signature": "da32ebe22bd76ae4a87781f90680b2560e30ca11"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "speechrecognition/1.0.0": {
         "dependencies": {
+          "AliyunSDK": "1.0.0",
           "Baidu.AI": "3.6.2",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
@@ -35,6 +36,27 @@
         },
         "compile": {
           "speechrecognition.dll": {}
+        }
+      },
+      "AliyunSDK/1.0.0": {
+        "runtime": {
+          "lib/aliyun-net-sdk-core.dll": {
+            "assemblyVersion": "1.1.7.0",
+            "fileVersion": "1.1.7.0"
+          },
+          "lib/aliyun-net-sdk-sts.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          },
+          "lib/aliyun-net-sdk-vod.dll": {
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.0.0"
+          }
+        },
+        "compile": {
+          "lib/aliyun-net-sdk-core.dll": {},
+          "lib/aliyun-net-sdk-sts.dll": {},
+          "lib/aliyun-net-sdk-vod.dll": {}
         }
       },
       "Baidu.AI/3.6.2": {
@@ -3172,6 +3194,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AliyunSDK/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-isxGB7K37mYclwwL6vHrTDLJ0D5yMV2Ihq7T51kOU32EqNkhbkeb2V2uftRz+abI1H1C3267X/++ljmJtZ1J1g==",
+      "path": "aliyunsdk/1.0.0",
+      "hashPath": "aliyunsdk.1.0.0.nupkg.sha512"
     },
     "Baidu.AI/3.6.2": {
       "type": "package",

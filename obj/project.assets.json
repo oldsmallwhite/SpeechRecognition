@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "AliyunSDK/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/aliyun-net-sdk-core.dll": {},
+          "lib/aliyun-net-sdk-sts.dll": {},
+          "lib/aliyun-net-sdk-vod.dll": {}
+        },
+        "runtime": {
+          "lib/aliyun-net-sdk-core.dll": {},
+          "lib/aliyun-net-sdk-sts.dll": {},
+          "lib/aliyun-net-sdk-vod.dll": {}
+        }
+      },
       "Baidu.AI/3.6.2": {
         "type": "package",
         "dependencies": {
@@ -4349,6 +4362,18 @@
     }
   },
   "libraries": {
+    "AliyunSDK/1.0.0": {
+      "sha512": "isxGB7K37mYclwwL6vHrTDLJ0D5yMV2Ihq7T51kOU32EqNkhbkeb2V2uftRz+abI1H1C3267X/++ljmJtZ1J1g==",
+      "type": "package",
+      "path": "aliyunsdk/1.0.0",
+      "files": [
+        "aliyunsdk.1.0.0.nupkg.sha512",
+        "aliyunsdk.nuspec",
+        "lib/aliyun-net-sdk-core.dll",
+        "lib/aliyun-net-sdk-sts.dll",
+        "lib/aliyun-net-sdk-vod.dll"
+      ]
+    },
     "Baidu.AI/3.6.2": {
       "sha512": "SWOkRTAqg4XGhx27tj63YYv3saRc6TRcq5YCx6L4ISvMMxEuHWht3bPtpdUhwMNdyUHIJ5zyGv0aMYqXltcVCg==",
       "type": "package",
@@ -11521,6 +11546,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "AliyunSDK >= 1.0.0",
       "Baidu.AI >= 3.6.2",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -11569,6 +11595,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "AliyunSDK": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Baidu.AI": {
             "target": "Package",
             "version": "[3.6.2, )"
@@ -11600,5 +11630,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1”而不是项目目标框架“.NETCoreApp,Version=v2.1”还原包“AliyunSDK 1.0.0”。此包可能与项目不完全兼容。",
+      "libraryId": "AliyunSDK",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
